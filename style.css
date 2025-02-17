@@ -1,0 +1,95 @@
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ecf0f1; /* Testo chiaro per contrasto */
+}
+
+h1 {
+  margin-top: 20px;
+  color: #ecf0f1;
+  font-size: 2.5em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#contenitore-grafo {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  background: #34495e;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#canvas-grafo {
+  border: 1px solid #4a5568;
+  background-color: #2d3748;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+#controlli {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+#controlli button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #4a5568, #2d3748); /* Bottoni grigio scuro */
+  color: #ecf0f1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#controlli button:hover {
+  background: linear-gradient(135deg, #2d3748, #4a5568);
+  transform: translateY(-2px);
+}
+
+#controlli button:active {
+  transform: translateY(0);
+}
+
+#controlli input {
+  margin: 5px;
+  padding: 10px;
+  font-size: 14px;
+  width: 100px;
+  border: 1px solid #4a5568;
+  border-radius: 5px;
+  background-color: #2d3748;
+  color: #ecf0f1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.evidenziato {
+  stroke: #48bb78; /* Verde tecnologico per il percorso evidenziato */
+  stroke-width: 3;
+}
+
+.nodo-selezionato {
+  fill: #ecc94b; /* Giallo per i nodi selezionati */
+}
+
+.costo-arco {
+  font-size: 16px;
+  font-weight: bold;
+  color: #cbd5e0; /* Testo grigio chiaro */
+}
